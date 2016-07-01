@@ -1,44 +1,46 @@
-Twitter Analysis Package
+# Twitter Analysis Package
 
 This is a the collection of software tools used for the project presented in 
 the our project on 
     Machine Learning, Sentiment Analysis, and Tweets: 
     An examination of Alzheimer's Disease stigma on Twitter
 
-There are three components presented here:
+There are three components presented here. The tagging interface, the machine 
+learning components, and the analysis tools.
 
-1) The Tagging interface (./Tagging Interface)
+## 1) The Tagging interface (./Tagging Interface)
 
-    This is the PHP, HTML, and JavaScript web application 
-    that we used to manually tag tweets to train the classifiers.
+This is the PHP, HTML, and JavaScript web application 
+that we used to manually tag tweets to train the classifiers.
 
-    This user interface was used to organize raters and present Tweets for 
-    tagging, and to manage tag data. While we provide this implementation for 
-    reference, we would recommend exploring other options for the coding 
-    interface. The PHP tooling involved is somewhat over complicated, and 
-    difficult to maintain and debug. 
+This user interface was used to organize raters and present Tweets for 
+tagging, and to manage tag data. While we provide this implementation for 
+reference, we would recommend exploring other options for the coding 
+interface. The PHP tooling involved is somewhat over complicated, and 
+difficult to maintain and debug. 
 
-    A alternative might be Python combined with the Bottle web framework. Python 
-    provides more user friendly tools for managing the connection between the 
-    database and the user interface. This would also allow for direct 
-    integration of the machine learning tools and the tagging interface.
+A alternative might be Python combined with the Bottle web framework. Python 
+provides more user friendly tools for managing the connection between the 
+database and the user interface. This would also allow for direct 
+integration of the machine learning tools and the tagging interface.
 
-2) The Machine Learning components (./python)
+## 2) The Machine Learning components (./python)
 
     This is the set of tools used to train, test, and produce output from 
     the classifiers. It relies on a series of dependencies that are described 
     in the ./python/requirements.txt
 
-3) The Statistical Analysis (./R)
+## 3) The Statistical Analysis (./R)
 
     These are scripts used for checking the inter-rater reliability of our 
     manual tags, and evaluating correlations between our tagged (or 
     predicted results) and LIWC results over the same data.
 
-There is a placeholder database (./Tagging Interface/alz.db). We are not able to
+There is a placeholder SQLite3 database (./Tagging Interface/alz.db). We are not able to
 host this database publicly, contact us (oscarn@oregonstate.edu) for more 
 information.
 
+## Tweets Scraping and Storage
 We have not provided our twitter scraping tool. For those interested in 
 producing their own tools, we would recommend looking at current twitter 
 clients.
