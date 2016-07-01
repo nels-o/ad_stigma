@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tag Table</title>
+    <link rel="stylesheet" href="./css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/d3.parcoords.css">
+    <style>
+    body{
+        display: block;
+    }
+    div.content{
+        width:70%;
+        margin: 0 auto;
+    }
+    div.parcoords{
+        margin: 0 auto;
+    }
+    td.no {
+        background-color:#f0f9e8;
+    }
+    td.somewhat {
+        background-color:#bae4bc;
+    }
+    td.fairly {
+        background-color:#7bccc4;
+    }
+    td.significantly {
+        background-color:#43a2ca;
+    }
+    td.completely {
+        background-color:#0868ac;
+    }
+    td.zero {
+        background-color:#018571;
+    }
+    td.half {
+        background-color:#80cdc1;
+    }
+    td.one {
+        background-color:#e5e5e5;
+    }
+    td.onehalf {
+        background-color:#dfc27d;
+    }
+    td.more {
+        background-color:#a6611a;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div id="tabular">
+            <button id="avg_table_btn">Show tag averages</button>
+            <button id="stddev_table_btn">Show tags stdev</button>
+            <button id="table_btn">Show all tags</button>
+            <br>
+            <table id="dt"></table>
+        </div>
+        <br>
+        <div id="parplot" class="parcoords" style="width:100%;height:300px;"></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./js/d3.parcoords.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
+    <script src="./js/tags2.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

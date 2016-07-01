@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/master.css" />
+    <style type="text/css" media="screen">
+    .question {
+        padding-top: 10px;
+        font-weight:bold;
+    }
+    .tagPrompt {
+        padding-top: 10px;
+    }
+    #content {
+        width:40%;
+        margin: 0 auto;
+    }
+    .tooltip {
+        background-color:#000;
+        border:1px solid #fff;
+        padding:10px 15px;
+        width:200px;
+        display:none;
+        color:#fff;
+        text-align:left;
+        font-size:12px;
+        /* outline radius for mozilla/firefox only */
+        -moz-box-shadow:0 0 10px #000;
+        -webkit-box-shadow:0 0 10px #000;
+    }
+    </style>
+    <title>YLP Twittering</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="tweet"></div>
+        <br>
+        <hr>
+        <br>
+        <div id="tagging"></div>
+        <div id="userStats"></div>
+        <br>
+        <p>Remember: 
+            <ul>
+                <li>
+                When rating each dimension except metaphorical, each Tweet should be coded on the overall content of the Tweet, not just the portion of the tweet that is referencing AD or dementia. Do not consider original tweets if it is a reply.
+                </li>
+                <li>
+                Retweets should be coded based on the overall content of the tweet, including that original content that was retweeted.
+                </li>
+                <li>
+                "No" vs. "Can't tell": when it seems like a toss up between the two code as "No" if it is at all reasonable, otherwise, "Can't tell"
+                </li>
+                <li>
+                <b>Not the Tweet we are looking for:</b>if it is senile the song, or if they keyword is only in the username (e.g., @wild_demeted)
+                </li>
+                <li>
+                <b>Metaphor</b>: code very short ones such as "memory loss" as can't tell (when there is no other context).  Comparison/simile using an idea that's not real counts as metaphor (e.g., she's a senile old bat).
+                If its unclear, stick to use of the AD related keyword and if its being applied to someone/thing that doesn't literally have dementia it should be more likely to count as ridicule <b>not necessarily metaphor</b>>. Example of metaphor (e.g., big demented eyes, another demented selfie), example of NOT metaphor (e.g. senile geriatric president)
+                </li>
+                <li>
+                <b>Personal experience</b>: tweets need to explicitly reference a personal experience of the person posting the Tweet, not just an opinion or reference to someone else’s experience.  Includes intentions, past tense, future tense (including hypothetical future, eg, if...then I would...)
+                </li>
+                <li>
+                <b>Joke</b>: If tweet mentions funny/humor, it counts as joke. Presence of emoticons (which we can't see) count as some context and provide a better reason to select "can't tell" versus "no". In other words, "no" is less a reasonable code in a very short tweet with emojis, for example: "i have short term memory loss <emoji><emoji>" should be "can't tell" because "no" is less certain.
+                </li>
+                <li>
+                <b>Ridicule</b>: use the AD related keyword as a guide (e.g., the word demented is negative and probably indicates ridicule). --Exaggerations or hyperbole that are negative also count as ridicule. <i>--Not ridicule</i> when Alzheimer's Disease itself is the target of ridicule (e.g., "Alzheimer's Sucks).
+                </li>
+                <li>
+                <b>Informative:</b> Job postings in dementia related facilities count as informative. Pay attention to the type of source, if its a news article or scientific finding, it is informative.  Ads for charity/fundraising events don’t count as informative unless it is a news story (headline) about this kind of event. In general, if it doesn’t have a link, its less likely to be informative (more likely to be personal opinion).
+                </li>
+            </ul>
+        </p>
+        <p>Take a look at the <a href="./tags.html">current tags</a> (<i>more</i> fancy new features!).</p>
+    </div>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript" src="./js/jquery.tooltipster.min.js"></script>
+    <script src="./js/dm.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
