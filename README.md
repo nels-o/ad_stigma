@@ -26,15 +26,15 @@ integration of the machine learning tools and the tagging interface.
 
 ## 2) The Machine Learning components (./python)
 
-    This is the set of tools used to train, test, and produce output from 
-    the classifiers. It relies on a series of dependencies that are described 
-    in the ./python/requirements.txt
+This is the set of tools used to train, test, and produce output from 
+the classifiers. It relies on a series of dependencies that are described 
+in the ./python/requirements.txt
 
 ## 3) The Statistical Analysis (./R)
 
-    These are scripts used for checking the inter-rater reliability of our 
-    manual tags, and evaluating correlations between our tagged (or 
-    predicted results) and LIWC results over the same data.
+These are scripts used for checking the inter-rater reliability of our 
+manual tags, and evaluating correlations between our tagged (or 
+predicted results) and LIWC results over the same data.
 
 There is a placeholder SQLite3 database (./Tagging Interface/alz.db). We are not able to
 host this database publicly, contact us (oscarn@oregonstate.edu) for more 
