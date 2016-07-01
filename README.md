@@ -1,5 +1,7 @@
+Twitter Analysis Package
+
 This is a the collection of software tools used for the project presented in 
-the our project on  
+the our project on 
     Machine Learning, Sentiment Analysis, and Tweets: 
     An examination of Alzheimer's Disease stigma on Twitter
 
